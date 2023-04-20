@@ -5,7 +5,6 @@
  * @format
  */
 
-//useState
 import React from 'react';
 import {PropsWithChildren, useState} from 'react';
 import {
@@ -20,7 +19,6 @@ import {
   Alert,
   Image,
 } from 'react-native';
-//Button, Alert 추가 함.
 
 import { NavigationContainer } from '@react-navigation/native';
 //import {createNativeStackNavigator} from '@react-navigation/native-stack';
@@ -34,10 +32,6 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-//import Box from './src/Components/Box';
-//import Home from './src/Screens/Home';
-//import Game from './src/Screens/Settings';
-//import BottomNavigator from './src/Components/BottomNavigator';
 
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 //import Icon from 'react-native-vector-icons/FontAwesome';
@@ -95,11 +89,7 @@ function App(): JSX.Element {
     setValue(value+1)
   }
 
-  //const Stack=createNativeStackNavigator();
   const Tab = createBottomTabNavigator();
-  //const myIcon = <Icon name="rocket" size={30} color="#900" />;
-  //setValue는 callback function
-
   return (
     <NavigationContainer>
     <Tab.Navigator>
@@ -137,25 +127,6 @@ function App(): JSX.Element {
     </NavigationContainer>
   );
 }
-//Button 추가 여기다.
-//<Button title="Toggle", onPress={onPress}/>
-    //{visible ? <Box rounded={true}/> : null}
-
-//Counter 추가
-//function Counter(){
-  //const [count,setCount]=useState(0);
-  //return()
-
-//}
-
-//<SafeAreaView>
-    //<View>
-    //<Text style={styles.text}>Hello! React-Native!</Text>
-    //</View>
-    //<Button title="Popup" onPress={()=>Alert.alert('Alert Test!')}/>
-    //<Text>{value}</Text>
-    //<Button title="Count" onPress={()=> {setValue(value+2)}}/>
-//</SafeAreaView>
 
 const styles = StyleSheet.create({
   sectionContainer: {
