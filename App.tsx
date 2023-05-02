@@ -26,10 +26,10 @@ import { NavigationContainer } from '@react-navigation/native';
 
 import {
   Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
+  //DebugInstructions,
+  //Header,
+  //LearnMoreLinks,
+  //ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
 
