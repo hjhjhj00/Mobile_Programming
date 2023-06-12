@@ -1,20 +1,14 @@
 import React from 'react';
 
 import {View, Text, StyleSheet} from 'react-native';
-
+import Providers from '../context/index';
 
 const style=StyleSheet.create({
     color: 'blue',
 });
 
 function MyPage(){
-    return(
-        <View>
-            <Text>
-                This is MyPage.
-            </Text>
-        </View>
-    )
+    return <Providers/>;
 }
 
 export default MyPage;

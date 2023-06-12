@@ -45,6 +45,7 @@ import chatBox from './src/Images/chatBox.png';
 import chatBubble from './src/Images/chatBubble.png';
 import Event from './src/Images/Event.png';
 import userAlt from './src/Images/userAlt.png';
+//import Providers from './src/context/index';
 
 
 type SectionProps = PropsWithChildren<{
@@ -117,7 +118,7 @@ function App(): JSX.Element {
     ),
     headerShown: false,
   }} />
-      <Tab.Screen name="MyPage" component={MyPage} options={{
+     <Tab.Screen name="MyPage" component={MyPage} options={{
     tabBarIcon: ({ size }) => (
       <Image source={userAlt} style={{ width: size, height: size }} />
     ),
@@ -127,6 +128,14 @@ function App(): JSX.Element {
     </NavigationContainer>
   );
 }
+
+/*
+ <Tab.Screen name="MyPage" component={MyPage} options={{
+    tabBarIcon: ({ size }) => (
+      <Image source={userAlt} style={{ width: size, height: size }} />
+    ),
+    headerShown: false,
+  }} />*/
 
 const styles = StyleSheet.create({
   sectionContainer: {

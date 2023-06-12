@@ -12,7 +12,7 @@ function Events(){
         <SafeAreaView>
         <View>
             <Text>
-                This is Events.
+                This is Events tab.
             </Text>
         </View>
         </SafeAreaView>
