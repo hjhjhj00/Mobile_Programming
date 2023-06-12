@@ -46,6 +46,7 @@ import chatBubble from './src/Images/chatBubble.png';
 import Event from './src/Images/Event.png';
 import userAlt from './src/Images/userAlt.png';
 //import Providers from './src/context/index';
+import HomeStack from './src/context/homeStack';
 
 
 type SectionProps = PropsWithChildren<{
@@ -100,7 +101,7 @@ function App(): JSX.Element {
     ),
     headerShown: false,
   }} />
-      <Tab.Screen name ="Chat" component={Chat} options={{
+      <Tab.Screen name ="Chat" component={HomeStack} options={{
     tabBarIcon: ({ size }) => (
       <Image source={chatBox} style={{ width: size, height: size }} />
     ),
