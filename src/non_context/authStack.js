@@ -1,4 +1,4 @@
-import { createStackNavigator } from '@react-navigation/stack';
+/*import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react';
 
 import LoginScreen from '../Screens/loginScreen';
@@ -12,3 +12,4 @@ export default function AuthStack() {
     </Stack.Navigator>
   );
 }
+*/
