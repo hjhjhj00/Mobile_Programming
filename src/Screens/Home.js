@@ -1,8 +1,12 @@
 import React from 'react';
 
 import {SafeAreaView,  ScrollView, View, Text, StyleSheet, Button, } from 'react-native';
-
-
+import {createStackNavigator} from '@react-navigation/stack';
+import NavHome from './NavHome';
+import Board from './Board';
+import Chat from './Chat';
+import Events from './Events';
+import LoginScreen from './loginScreen';
 const styles=StyleSheet.create({
     scrollView: {
         backgroundColor : 'white',
@@ -16,9 +20,25 @@ const styles=StyleSheet.create({
     }
 });
 
+const MyBoard = createStackNavigator();
+//const MyEvent=createStackNavigator();
 function Home(){
     return(
-        <SafeAreaView>
+        <MyBoard.Navigator initialRouteName='NavHome' screenOptions={{ headerShown: false }}>
+        <MyBoard.Screen name='NavHome' component={NavHome} />
+        <MyBoard.Screen name='Board' component={Board} />
+        <MyBoard.Screen name='Chat' component={Chat} />
+        <MyBoard.Screen name='Events' component={Events} />
+        <MyBoard.Screen name='LoginScreen' component={LoginScreen} />
+        </MyBoard.Navigator>
+     
+    )
+}
+
+export default Home;
+
+/*
+<SafeAreaView>
             <ScrollView style={styles.scrollView}>
                 <View style={{height:60, borderStyle: 'solid', }}>
                 <Text style={styles.boldtext}>
@@ -70,9 +90,7 @@ function Home(){
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </Text>
+           
       </ScrollView>
         </SafeAreaView>
-    )
-}
-
-export default Home;
+        */
