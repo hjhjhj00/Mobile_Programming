@@ -45,8 +45,8 @@ import chatBox from './src/Images/chatBox.png';
 import chatBubble from './src/Images/chatBubble.png';
 import Event from './src/Images/Event.png';
 import userAlt from './src/Images/userAlt.png';
-//import Providers from './src/context/index';
-import HomeStack from './src/context/homeStack';
+//import HomeStack from './src/context/homeStack';
+import Providers from './src/non-context';
 
 
 type SectionProps = PropsWithChildren<{
@@ -79,6 +79,9 @@ function Section({children, title}: SectionProps): JSX.Element {
   );
 }
 
+
+//import Providers from './src/non-context';
+
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
 
@@ -101,7 +104,7 @@ function App(): JSX.Element {
     ),
     headerShown: false,
   }} />
-      <Tab.Screen name ="Chat" component={HomeStack} options={{
+      <Tab.Screen name ="Chat" component={Providers} options={{
     tabBarIcon: ({ size }) => (
       <Image source={chatBox} style={{ width: size, height: size }} />
     ),

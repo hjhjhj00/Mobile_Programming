@@ -5,9 +5,9 @@ import { Divider, List } from 'react-native-paper';
 
 
 
-//import { chatkitty } from '../Components/chatkitty';
-import ChatKitty from '@chatkitty/core';
-const chatkitty = ChatKitty.getInstance('18b75db7-9263-44e2-adb4-19aec46af6c9')
+import { chatkitty } from '../Components/chatkitty';
+//import ChatKitty from '@chatkitty/core';
+//const chatkitty = ChatKitty.getInstance('18b75db7-9263-44e2-adb4-19aec46af6c9')
 //import Loading from '../components/loading';
 
 function Chat() {
